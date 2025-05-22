@@ -62,16 +62,16 @@ else:
     tutorial_page = st.Page(tutorial, title="Tutorial", icon=":material/info:")
     logout_page = st.Page(logout, title="Cerrar sesión", icon=":material/logout:")
 
-    dashboard = st.Page("reports/dashboard.py", title="Dashboard", icon=":material/dashboard:")
-    bugs = st.Page("reports/bugs.py", title="Bug reports", icon=":material/bug_report:")
-    alerts = st.Page("reports/alerts.py", title="System alerts", icon=":material/notification_important:")
+    dashboard = st.Page("paginas/reports/dashboard.py", title="Dashboard", icon=":material/dashboard:")
+    bugs = st.Page("paginas/reports/bugs.py", title="Bug reports", icon=":material/bug_report:")
+    alerts = st.Page("paginas/reports/alerts.py", title="System alerts", icon=":material/notification_important:")
 
-    search = st.Page("tools/search.py", title="Search", icon=":material/search:")
-    history = st.Page("tools/history.py", title="History", icon=":material/history:")
+    search = st.Page("paginas/tools/search.py", title="Search", icon=":material/search:")
+    history = st.Page("paginas/tools/history.py", title="History", icon=":material/history:")
 
-    imagen = st.Page("metodo/imagen.py", title="Imagen", icon=":material/photo_camera:")
-    video = st.Page("metodo/video.py", title="Video", icon=":material/movie:")
-    directo = st.Page("metodo/directo.py", title="Directo", icon=":material/videocam:")
+    imagen = st.Page("paginas/metodo/imagen.py", title="Imagen", icon=":material/photo_camera:")
+    video = st.Page("paginas/metodo/video.py", title="Video", icon=":material/movie:")
+    directo = st.Page("paginas/metodo/directo.py", title="Directo", icon=":material/videocam:")
 
     # Estilos y navegación
     st.markdown(
