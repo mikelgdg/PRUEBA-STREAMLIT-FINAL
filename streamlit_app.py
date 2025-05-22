@@ -10,13 +10,19 @@ def login():
     st.title("Iniciar sesión")
     username = st.text_input("Usuario")
     password = st.text_input("Contraseña", type="password")
+    
+    if "login_failed" not in st.session_state:
+        st.session_state.login_failed = False
+
     if st.button("Iniciar sesión"):
-        if username == "admin" and password == "4dm1n":
+        if username == "admin" and password == "4dm1n1s7R4d0R":
             st.session_state.logged_in = True
-            st.success("Inicio de sesión exitoso")
-            st.experimental_rerun()
+            st.session_state.login_failed = False
         else:
-            st.error("Usuario o contraseña incorrectos")
+            st.session_state.login_failed = True
+
+    if st.session_state.login_failed:
+        st.error("Usuario o contraseña incorrectos")
 
 # Función para logout
 def logout():
